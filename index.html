@@ -39,7 +39,7 @@
   <main role="main" class="row">
     <section class="large-6 columns">
       <h4>User information</h4>
-      <form action="#" class="custom">
+      <form method="POST" action="#" class="custom" data-validate="parsley">
         <div class="panel">
           <div class="row">
             <div class="large-6 columns">
@@ -58,7 +58,7 @@
             </div>
             <div class="large-6 columns">
               <label for="email_verification">Repeat email address*</label>
-              <input type="email" required="required" name="email_verification" id="email_verification">
+              <input type="email" required="required" name="email_verification" id="email_verification" data-equalto="#email">
             </div>
           </div>
           <div class="row">
@@ -78,8 +78,8 @@
               <label for="tos">
                 <input type="checkbox" name="tos" id="tos" class="hide" required="required">
                 <span class="custom checkbox"></span>
-                Yes, I have read and I accept the uKnow.com <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-              </label>
+                <span class="checkbox-text">Yes, I have read and I accept the uKnow.com <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a><span>
+              </span></span></label>
             </div>
           </div>
           <div class="row">
@@ -104,7 +104,7 @@
         </ul>
         <small>* Text message monitoring is available for Android mobile  phones only</small>     
         <hr>
-        <p>Use the complete Family Sense product absolutely risk free for 60 
+        <p class="plan-description">Use the complete Family Sense product absolutely risk free for 60 
           days. We won’t even ask you for your credit card! At the end of 
           the trial, you can continue using the full Family Sense suite of 
           social, mobile and location monitoring tools for just $9.95/month.</p> 
